@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from .forms import AuthorizationForm
 
 
 def main(request):
@@ -6,4 +7,5 @@ def main(request):
 
 
 def AuthorizationBand(request):
-    return render(request, "authorization/auth.html", {})
+    auth_form = AuthorizationForm
+    return render(request, "authorization/auth.html", {"form": auth_form})
