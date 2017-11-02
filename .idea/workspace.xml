@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd8f6803-f4c6-4f5e-8f54-1301ba6df85c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/authorization/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/authorization/js/toggle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/settings.py" afterPath="$PROJECT_DIR$/main/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetable/templates/authorization/auth.html" afterPath="$PROJECT_DIR$/timetable/templates/authorization/auth.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,8 +78,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timetable/templates/timetable/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3744">
-              <caret line="208" column="7" lean-forward="true" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
+            <state relative-caret-position="486">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -400,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509620045399</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавил шаблон расписания">
+      <created>1509622974651</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509622974651</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -447,7 +450,8 @@
     <MESSAGE value="StartProject" />
     <MESSAGE value="Добавлены Allowed Hosts" />
     <MESSAGE value="Создана таблица в базе" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создана таблица в базе" />
+    <MESSAGE value="Добавил шаблон расписания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил шаблон расписания" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -638,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timetable/templates/timetable/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3744">
-          <caret line="208" column="7" lean-forward="true" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
+        <state relative-caret-position="486">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding />
         </state>
       </provider>
