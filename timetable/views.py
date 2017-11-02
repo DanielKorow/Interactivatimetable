@@ -6,4 +6,4 @@ def main(request):
 
 
 def AuthorizationBand(request):
-    render()
+    return render(request, "authorization/auth.html", {})
