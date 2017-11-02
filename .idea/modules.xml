@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DuckDock/.idea/DuckDock.iml" filepath="$PROJECT_DIR$/../DuckDock/.idea/DuckDock.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/InteractiveTimetable.iml" filepath="$PROJECT_DIR$/.idea/InteractiveTimetable.iml" />
     </modules>
   </component>

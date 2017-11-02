@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-# Create your views here.
+
+def main(request):
+    return redirect('/login')
+
+
+def AuthorizationBand(request):
+    render()
