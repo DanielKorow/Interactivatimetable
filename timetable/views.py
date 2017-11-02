@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import AuthorizationForm
+from .forms import AuthorizationForm, RegistrationForm
 
 
 def main(request):
@@ -8,7 +8,8 @@ def main(request):
 
 def authorizationband(request):
     auth_form = AuthorizationForm
-    return render(request, "authorization/auth.html", {"form": auth_form})
+    reg_form = RegistrationForm
+    return render(request, "authorization/auth.html", {"form": auth_form, "reg_form": reg_form})
 
 
 def schedule(request):
