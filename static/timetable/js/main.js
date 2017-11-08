@@ -94,7 +94,9 @@ jQuery(document).ready(function($){
 				duration = getScheduleTimestamp($(this).attr('data-end')) - start;
 
 			var eventTop = self.eventSlotHeight*(start - self.timelineStart)/self.timelineUnitDuration,
+			    eventTop = eventTop/2
 				eventHeight = self.eventSlotHeight*duration/self.timelineUnitDuration;
+				eventHeight = eventHeight/2
 			
 			$(this).css({
 				top: (eventTop -1) +'px',
