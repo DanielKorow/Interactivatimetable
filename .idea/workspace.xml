@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd8f6803-f4c6-4f5e-8f54-1301ba6df85c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/timetable/css/style.css" afterPath="$PROJECT_DIR$/static/timetable/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/timetable/js/main.js" afterPath="$PROJECT_DIR$/static/timetable/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetable/templates/timetable/index.html" afterPath="$PROJECT_DIR$/timetable/templates/timetable/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,8 +70,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timetable/templates/timetable/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            <state relative-caret-position="173">
+              <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1491,7 +1488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510136275123</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Подогнал фронт-энд">
+      <created>1510140621987</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1510140621987</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1554,7 +1558,8 @@
     <MESSAGE value="Пока работает" />
     <MESSAGE value="логика недели" />
     <MESSAGE value="Сделан рендер недели в HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделан рендер недели в HTML" />
+    <MESSAGE value="Подогнал фронт-энд" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подогнал фронт-энд" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1919,8 +1924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timetable/templates/timetable/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        <state relative-caret-position="173">
+          <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
           <folding />
         </state>
       </provider>
