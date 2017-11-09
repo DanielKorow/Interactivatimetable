@@ -14,6 +14,3 @@ def week_func():
             if a == today.date():
                 week = i
     return week
-
-
-print(week_func())

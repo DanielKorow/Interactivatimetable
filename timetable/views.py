@@ -23,3 +23,7 @@ def schedule(request):
     saturday = week[5]
     sunday = week[6]
     return render(request, "timetable/index.html", {"monday": monday, "tuesday": tuesday, "wednesday": wednesday, "thursday": thursday, "friday": friday, "saturday": saturday, "sunday": sunday})
+
+
+def create_rep(request):
+    return render(request, "timetable/create_rep.html", {})

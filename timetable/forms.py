@@ -1,5 +1,5 @@
 from django import forms
-from .models import Band, BandReg
+from .models import Band, BandReg, Repetition
 
 
 class AuthorizationForm(forms.ModelForm):
@@ -24,3 +24,10 @@ class RegistrationForm(forms.ModelForm):
             'email': forms.EmailInput(
             attrs={'placeholder': 'E-mail', 'class': 'form-control', 'id': 'inputEmail'})
         })
+
+
+class CreateRep(forms.ModelForm):
+    class Meta:
+        model = Repetition
+        fields = ("time_start", "time_end", "date")
+        widgets = ({'date': forms.DateInput(attrs={'id': 'date'})})
