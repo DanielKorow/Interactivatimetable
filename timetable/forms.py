@@ -34,6 +34,6 @@ class CreateRep(forms.ModelForm):
         model = Repetition
         fields = ("date", "time_start", "time_end")
         widgets = ({'date': forms.SelectDateWidget(),
-                    'time_start': forms.TimeInput(attrs={'placeholder': '18:00'}),
-                    'time_end': forms.TimeInput(attrs={'placeholder': '19:00'}),
+                    'time_start': forms.TimeInput(attrs={'placeholder': '18:00', 'class': 'inputform'}),
+                    'time_end': forms.TimeInput(attrs={'placeholder': '19:00', 'class': 'inputform'}),
                     })
