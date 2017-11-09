@@ -2,7 +2,6 @@ from django import forms
 from .models import Band, BandReg, Repetition
 
 
-
 class AuthorizationForm(forms.ModelForm):
     class Meta:
         model = Band

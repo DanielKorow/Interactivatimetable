@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from .forms import AuthorizationForm, RegistrationForm, CreateRep
 from .scripts import ExtCalendar
-
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from django.contrib import auth
 
 def main(request):
     return redirect('/login')
@@ -11,6 +13,11 @@ def authorizationband(request):
     auth_form = AuthorizationForm
     reg_form = RegistrationForm(request.POST)
     if reg_form.is_valid():
+        band_name = reg_form.cleaned_data['login']
+        password = reg_form.cleaned_data['password']
+        email = reg_form.cleaned_data['email']
+        user = User.objects.create_user(band_name, email, password)
+        user.save()
         reg_form.save()
         redirect("/schedule")
     return render(request, "authorization/auth.html", {"form": auth_form, "reg_form": reg_form})
