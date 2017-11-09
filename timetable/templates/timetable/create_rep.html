@@ -1,10 +1,13 @@
+{% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <link href="{% static '/timetable/css/bootstrap.min.css' %}" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Создание репетиции</title>
 </head>
 <body>
+<div class="row">
+    <div class="col-lg-12 text-center"
 <form action="" method="post">
     {% csrf_token %}
     {{ create.date }} <br>
@@ -12,5 +15,7 @@
     <p>Время окончания репетиции:</p> {{ create.time_end }} <br><br>
     <input type="submit" value="Создать" />
 </form>
+    </div>
+</div>
 </body>
 </html>
