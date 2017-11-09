@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import AuthorizationForm, RegistrationForm
+from .forms import AuthorizationForm, RegistrationForm, CreateRep
 from .scripts import ExtCalendar
 
 
@@ -26,4 +26,5 @@ def schedule(request):
 
 
 def create_rep(request):
-    return render(request, "timetable/create_rep.html", {})
+    create_form = CreateRep
+    return render(request, "timetable/create_rep.html", {"create": create_form})
