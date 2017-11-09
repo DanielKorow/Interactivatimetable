@@ -32,5 +32,8 @@ class RegistrationForm(forms.ModelForm):
 class CreateRep(forms.ModelForm):
     class Meta:
         model = Repetition
-        fields = ("date", )
-        widgets = ({'date': forms.SelectDateWidget()})
+        fields = ("date", "time_start", "time_end")
+        widgets = ({'date': forms.SelectDateWidget(),
+                    'time_start': forms.TimeInput(attrs={'placeholder': '18:00'}),
+                    'time_end': forms.TimeInput(attrs={'placeholder': '19:00'}),
+                    })

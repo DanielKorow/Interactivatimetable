@@ -5,9 +5,11 @@
     <title>Создание репетиции</title>
 </head>
 <body>
-<form action="/your-name/" method="post">
+<form action="" method="post">
     {% csrf_token %}
-    {{ create }}
+    {{ create.date }} <br>
+    <p>Время начала репетиции:</p> {{ create.time_start }} <br>
+    <p>Время окончания репетиции:</p> {{ create.time_end }} <br><br>
     <input type="submit" value="Создать" />
 </form>
 </body>
