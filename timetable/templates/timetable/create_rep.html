@@ -13,10 +13,12 @@
          <h2>Название группы</h2>
 <form action="" method="post">
     {% csrf_token %}
-    {{ create.date }} <br>
-    <p>Время начала репетиции:</p> {{ create.time_start }} <br>
-    <p>Время окончания репетиции:</p> {{ create.time_end }} <br><br>
+    {{ create.date }} <br><br>
+    <div class="row">
+    Время начала репетиции:{{ create.time_start }} <br><br>
+    Время окончания репетиции:{{ create.time_end }} <br><br>
     <input type="submit" value="Создать" />
+    </div>
 </form>
     </div>
 </div>

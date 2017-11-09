@@ -9,7 +9,10 @@ def main(request):
 
 def authorizationband(request):
     auth_form = AuthorizationForm
-    reg_form = RegistrationForm
+    reg_form = RegistrationForm(request.POST)
+    if reg_form.is_valid():
+        reg_form.save()
+        redirect("/schedule")
     return render(request, "authorization/auth.html", {"form": auth_form, "reg_form": reg_form})
 
 
@@ -26,5 +29,10 @@ def schedule(request):
 
 
 def create_rep(request):
-    create_form = CreateRep
+    create_form = CreateRep(request.POST)
+    if create_form.is_valid():
+        start = create_form.cleaned_data['time_start']
+        end = create_form.cleaned_data['time_end']
+        print(start + " " + end)
+        create_form.save()
     return render(request, "timetable/create_rep.html", {"create": create_form})
